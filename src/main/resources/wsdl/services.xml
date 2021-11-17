@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<service name="HighScoreService">
+<service name="TestScoreService">
 
     <description>
         Simple implementation of a HighScoreService.
@@ -7,23 +7,23 @@
 
     <parameter name="ServiceClass">com.wahyu.service.HighScoreService</parameter>
 
-    <operation name="addHighScore" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.wahyu.com/xsd">
-        <actionMapping>http://service.wahyu.com/xsd/addHighScore</actionMapping>
+    <operation name="addHighScore" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.wahyu.com">
+        <actionMapping>http://service.wahyu.com/addHighScore</actionMapping>
         <messageReceiver class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
     </operation>
 
-    <operation name="getHighScores" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.wahyu.com/xsd">
-        <actionMapping>http://service.wahyu.com/xsd/getHighScores</actionMapping>
+    <operation name="getHighScores" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.wahyu.com">
+        <actionMapping>http://service.wahyu.com/getHighScores</actionMapping>
         <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
     </operation>
 
-    <operation name="getHighScoresForNickname" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.wahyu.com/xsd">
-        <actionMapping>http://service.wahyu.com/xsd/getHighScoresForNickname</actionMapping>
+    <operation name="getHighScoresForNickname" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.wahyu.com">
+        <actionMapping>http://service.wahyu.com/getHighScoresForNickname</actionMapping>
         <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
     </operation>
 
-    <operation name="getHighScoresSize" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.wahyu.com/xsd">
-        <actionMapping>http://service.wahyu.com/xsd/getHighScoresSize</actionMapping>
+    <operation name="getHighScoresSize" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://service.wahyu.com">
+        <actionMapping>http://service.wahyu.com/getHighScoresSize</actionMapping>
         <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
     </operation>
 
